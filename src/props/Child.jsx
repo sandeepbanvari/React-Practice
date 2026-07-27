@@ -1,5 +1,4 @@
-function Cards(props) {
-
+export const Child = (props) => {
     return (
         <div className="card">
             <img src={props.image} alt="" />
@@ -10,5 +9,3 @@ function Cards(props) {
         </div>
     )
 }
-
-export default Cards;

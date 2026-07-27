@@ -1,9 +1,10 @@
-import { Home } from "../Pages/Home"
 
-export const App = ()=>{
-  return(
-    <>
-    <Home/>
-    </>
-  )
+import { AppRoutes } from './Routes/AppRoutes';
+
+export const App = () => {
+    return(
+        <>
+        <AppRoutes/>
+        </>
+    )
 }

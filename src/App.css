@@ -1,0 +1,6 @@
+.bg-img{
+    height: 300px;
+    width: 350px;
+    background-image: url('./assets/baahubali2.jpeg');
+    background-size: 100% 100%;
+}

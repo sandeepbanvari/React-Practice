@@ -1,6 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 export const Header = () => {
+
+    const navLinks = [
+        { path: "/", name: "Home", },
+        { path: "/products", name: "Products", },
+        { path: "/about", name: "About", },
+        { path: "/contact", name: "Contact", },
+        { path: "/users", name: "Users", },
+    ]
+
+
     return (
         <header className="header">
 
@@ -10,10 +20,17 @@ export const Header = () => {
             </div>
 
             <nav className="navbar">
-                <Link to='/'>Home</Link>
+                {
+                    navLinks.map((link) => (
+                        <NavLink key={link.path} to={link.path}>
+                            {link.name}
+                        </NavLink>
+                    ))
+                }
+                {/* <Link to='/'>Home</Link>
                 <Link to="/products">Products</Link>
                 <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Contact</Link> */}
             </nav>
 
             <div className="header-right">
@@ -25,8 +42,14 @@ export const Header = () => {
 
                 <a href="#"><i className="fa-solid fa-cart-shopping"></i></a>
 
-                <button className="login-btn">Login</button>
+                <div className="user-menu">
+                        <i className="fa-solid fa-user"></i>
 
+                    <div className="user-dropdown">
+                        <Link to="/signin">Sign In</Link>
+                        <Link to="/signup">Sign Up</Link>
+                    </div>
+                </div>
             </div>
 
         </header>

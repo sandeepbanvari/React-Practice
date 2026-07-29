@@ -1,0 +1,92 @@
+/* Minimal CSS for Users.jsx */
+
+.user-container {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.left {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.left h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    color: #333;
+}
+
+.user-name {
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.user-name:hover {
+    background: #e8f5e9;
+    border-color: #2e7d32;
+    color: #2e7d32;
+}
+
+.user-name.active {
+    background: #2e7d32;
+    color: #ffffff;
+    border-color: #2e7d32;
+    font-weight: 600;
+}
+
+.right {
+    flex: 2;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.right h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    color: #333;
+}
+
+.right h3 {
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: #2e7d32;
+}
+
+.right p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+    padding: 8px 12px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.right p strong,
+.right h3 strong {
+    margin-right: 8px;
+    color: #222;
+}
+
+@media (max-width: 600px) {
+    .user-container {
+        flex-direction: column;
+    }
+}

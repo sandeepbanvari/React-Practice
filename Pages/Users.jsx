@@ -29,7 +29,6 @@ export const Users = () => {
 
                 <div className="right">
                     <h2>User Details</h2>
-
                     <h3><strong>Name:</strong>{selectedUser.name}</h3>
                     <p><strong>Age:</strong> {selectedUser.age}</p>
                     <p><strong>City:</strong> {selectedUser.city}</p>

@@ -9,14 +9,11 @@ export const Signin = () => {
                 {/* <!-- Left Side --> */}
 
                 <div className="signin-left">
-
                     <h1>Welcome Back!</h1>
-
                     <p>
                         Sign in to continue shopping fresh groceries, manage your
                         orders, and enjoy exclusive deals every day.
                     </p>
-
                     <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600"
                         alt="FreshMart" />
 
@@ -29,7 +26,6 @@ export const Signin = () => {
                     <h2>Sign In</h2>
 
                     <form>
-
                         <div className="input-box">
                             <i className="fa-solid fa-envelope"></i>
                             <input
@@ -37,7 +33,6 @@ export const Signin = () => {
                                 placeholder="Email Address"
                                 required />
                         </div>
-
                         <div className="input-box">
                             <i className="fa-solid fa-lock"></i>
                             <input
@@ -45,16 +40,12 @@ export const Signin = () => {
                                 placeholder="Password"
                                 required />
                         </div>
-
                         <div className="remember">
-
                             <label>
                                 <input type="checkbox"/>
                                     Remember Me
                             </label>
-
                             <a href="#">Forgot Password?</a>
-
                         </div>
 
                         <button type="submit" className="signin-btn">
